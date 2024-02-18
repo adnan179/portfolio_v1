@@ -34,7 +34,10 @@ export default function Experience() {
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
-      <Chrono items={items} mode="VERTICAL_ALTERNATING" />
+      {/* Check if window is defined before rendering Chrono */}
+      {typeof window !== "undefined" && (
+        <Chrono items={items} mode="VERTICAL_ALTERNATING" />
+      )}
     </section>
   );
 }

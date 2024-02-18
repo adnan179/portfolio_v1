@@ -34,7 +34,6 @@ export default function RootLayout({
             <Footer />
             {/* all pop up msgs for email contact form */}
             <Toaster position="top-center" />
-            
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
       </body>
