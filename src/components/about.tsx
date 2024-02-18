@@ -18,7 +18,7 @@ export default function About() {
       <p className='text-[1rem] mb-3 leading-9 text-justify'>
         Imagine a second-year student, stumbling upon a 
         <span className="font-medium"> YouTube video about web development</span> 
-        and being instantly captivated. That was me, at a pivotal moment in my academic journey at 
+         and being instantly captivated. That was me, at a pivotal moment in my academic journey at 
         <span className="font-medium"> GITAM University, Bangalore.</span>
         From that serendipitous encounter, I've been on an unyielding quest for knowledge. I delved into YouTube playlists, 
         devouring front-end development tutorials with fervor. Soon after, I eagerly embraced formal education, enrolling in 

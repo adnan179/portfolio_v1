@@ -6,7 +6,6 @@ import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 
-
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
   const { theme } = useTheme();
@@ -25,19 +24,26 @@ export default function Experience() {
       textAlign: "left",
       padding: "1.3rem 2rem",
     },
-    cardTitleStyle: {
-      fontSize: "1rem", // Adjust the font size as needed
-      padding: "0.5rem 1rem", // Adjust the padding as needed
-    },
   }));
+
+  // Determine the mode based on screen width
+  const mode = typeof window !== "undefined" && window.innerWidth < 400 ? "HORIZONTAL" : "VERTICAL_ALTERNATING";
 
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
-      {/* Check if window is defined before rendering Chrono */}
-      {typeof window !== "undefined" && (
-        <Chrono items={items} mode="VERTICAL_ALTERNATING" />
-      )}
+      <Chrono
+        className="my-timeline"
+        items={items}
+        mode={mode}
+        theme={{
+          primary: mode === "HORIZONTAL" ? "transparent" : "gray", 
+          secondary:"blue",
+          titleColorActive: "white",
+          titleColor:"white",
+          cardTitleColor:"black",
+        }}
+      />
     </section>
   );
 }
