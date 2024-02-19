@@ -34,12 +34,14 @@ export const links = [
 
 export const experiencesData = [
   {
+    tag:"Github Community",
     title: "UI/UX Designer At college's Github community ",
     description:
       "GitHub Community Leadership: Served as a core team member and UI/UX designer, contributing to web and app design projects within the college GitHub community, while also showcasing effective organizational and leadership skills through successful planning and management of various events, including the design of an events app and a community website, demonstrating versatility in design and project execution.",
     date: "2023-present",
   },
   {
+    tag: "Reverr",
     title: "React Application Quality Analyst at Reverr",
     description:
       "Conducted extensive testing of Reverr's React JS website, identifying design flaws and ensuring functionality, while authoring comprehensive test cases and maintaining high-quality code standards through collaboration with the development team, all while deepening my understanding of web development.",
@@ -89,7 +91,7 @@ export const skillsData = [
   "Git",
   "Tailwind",
   "MongoDB",
-  "Express",
+  "Figma",
   "Python",
   "Framer Motion",
 ] as const;

@@ -1,50 +1,43 @@
 "use client";
-import React from "react";
-import SectionHeading from "./sectionHeading";
-import { Chrono } from "react-chrono";
+import React, { useState,useRef } from 'react';
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
-import { useTheme } from "@/context/theme-context";
+import SectionHeading from './sectionHeading';
 
-export default function Experience() {
+export default function ExperienceSection() {
   const { ref } = useSectionInView("Experience");
-  const { theme } = useTheme();
-
-  // Transform data to fit the structure expected by react-chrono
-  const items = experiencesData.map((item, index) => ({
-    title: item.title,
-    cardTitle: item.date,
-    cardSubtitle: item.description,
-    // Assign "left" or "right" based on index for alternating layout
-    position: index % 2 === 0 ? "left" : "right",
-    backgroundColor: theme === "light" ? "#F3F4F6" : "#272822",
-    contentStyle: {
-      boxShadow: "none",
-      border: "1px solid rgba(0, 0, 0, 0.05)",
-      textAlign: "left",
-      padding: "1.3rem 2rem",
-    },
-  }));
-
-  // Determine the mode based on screen width
-  const mode = typeof window !== "undefined" && window.innerWidth < 400 ? "HORIZONTAL" : "VERTICAL_ALTERNATING";
+  const [selectedExperience, setSelectedExperience] = useState(experiencesData[0]);
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>My experience</SectionHeading>
-      {typeof window !== "undefined" && (
-      <Chrono
-        className="my-timeline"
-        items={items}
-        mode={mode}
-        theme={{
-          primary: mode === "HORIZONTAL" ? "transparent" : "gray", 
-          secondary:"blue",
-          titleColorActive: "white",
-          titleColor:"white",
-          cardTitleColor:"black",
-        }}
-      />)}
+    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40 ">
+      <SectionHeading>My Experience</SectionHeading>
+      {/* main-container */}
+      <div className="flex justify-center items-center gap-5">
+        <div className="flex flex-col gap-7 sm:max-w-[50%] justify-center items-center">
+          {/* Roles */}
+          <div className="flex flex-row gap-2 ">
+            {experiencesData.map((experience, index) => (
+              <button
+                key={index}
+                className={selectedExperience === experience ? "px-5 py-3 rounded-xl border-black bg-black/10 dark:bg-white/10 text-pink-700 dark:text-blue-500 font-medium" :
+                  "px-5 py-3 rounded-xl border-black bg-white dark:bg-white/10 hover:scale-110 transition ease-in-out duration-300 dark:hover:text-blue-500 hover:text-pink-700"}
+                onClick={()=>setSelectedExperience(experience)}
+              >
+                {experience.tag}
+              </button>
+            ))}
+          </div>
+          {/* role description */}
+          <div className="flex flex-col gap-2 dark:bg-white/10 dark:text-white/80 rounded-lg border dark:border-black/5 sm:p-6 p-4 
+          sm:max-w-[80%] sm:ml-12 shadow shadow-pink-200 dark:shadow-none transition duration-400 ease-in">
+            <h1 className="dark:text-white text-black sm:text-xl text-md font-semibold">{selectedExperience.title}</h1>
+            <h3 className="sm:text-md text-xs">{selectedExperience.date}</h3>
+            <p className="dark:text-[#D6D6D6] text-black/90 sm:text-lg text-sm">
+              {selectedExperience.description}
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   );
-}
+};
