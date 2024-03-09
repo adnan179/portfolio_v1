@@ -1,9 +1,8 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { LuGraduationCap } from "react-icons/lu";
 import spacex from '../../public/spacex.png';
 import projectPortal from '../../public/project subsmission.png';
 import plantracx from '../../public/plantracx.png';
+import dental from "../../public/dental-admin-dashboard.png";
 
 export const links = [
   {
@@ -59,12 +58,12 @@ export const projectsData = [
     link:"https://github.com/adnan179/final_year_project",
   },
   {
-    title: "Spacex",
+    title: "Dental management Dashboard",
     description:
-      "SpaceX: Your ultimate online resource for comprehensive information on space missions, capsules, dragons, and more.",
+      "🦷 Introducing our Dental Admin Dashboard! 🌟Manage appointments, track attendance, and monitor finances effortlessly. Stay organized with inventory management and vendor tracking. Elevate your dental practice to new heights of efficiency and success! 💼💡",
     tags: ["React", "Next.js", "Tailwind","Framer Motion","Figma"],
-    imageUrl: spacex,
-    link:"https://www.figma.com/file/BLjNR8mIJW3W5aWNjoA44D/spacex?type=design&node-id=0%3A1&mode=design&t=Hz29iX6cFejhpom8-1",
+    imageUrl: dental,
+    link:"",
   },
   {
     title: "Plantracx",
