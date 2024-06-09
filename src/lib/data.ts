@@ -50,7 +50,7 @@ export const projectsData = [
   {
     title: "College Project Submission portal",
     description:"🚀 Developed a dynamic project submission portal 📁 for students to upload files 📤, access announcements 📢, and streamline project management 🗂️. Included administrator features such as team creation 👥 and updates sharing 🔄 for an efficient and engaging user experience! 🌟",
-    tags: ["React", "node JS", "Tailwind","express","MongoDB","firebase","Figma"],
+    tags: ["React", "Node JS", "Tailwind","Express JS","MongoDB","firebase","Figma","Postman","Multer","JWT"],
     imageUrl: projectPortal,
     link:"https://github.com/adnan179/final_year_project",
   },
