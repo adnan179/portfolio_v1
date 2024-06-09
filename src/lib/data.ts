@@ -1,7 +1,5 @@
-import React from "react";
-import spacex from '../../public/spacex.png';
 import projectPortal from '../../public/project subsmission.png';
-import plantracx from '../../public/plantracx.png';
+import nestseek from "../../public/nestseek.png";
 import dental from "../../public/dental-admin-dashboard.png";
 
 export const links = [
@@ -51,11 +49,17 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "College Project Submission portal",
-    description:
-      "Developed a dynamic project submission portal for students to upload files, access announcements, and streamline project management, with administrator features including team creation and updates sharing.",
+    description:"🚀 Developed a dynamic project submission portal 📁 for students to upload files 📤, access announcements 📢, and streamline project management 🗂️. Included administrator features such as team creation 👥 and updates sharing 🔄 for an efficient and engaging user experience! 🌟",
     tags: ["React", "node JS", "Tailwind","express","MongoDB","firebase","Figma"],
     imageUrl: projectPortal,
     link:"https://github.com/adnan179/final_year_project",
+  },
+  {
+    title: "NestSeek",
+    description:"🏡 NestSeek is a real estate platform that allows sellers to upload and manage property listings 🏘️, enables buyers to view detailed property information 📋 and contact sellers 📞, and provides a feature for users to post and find roommate requests 👫 based on their preferences. 🌟",
+    tags: ["React", "Tailwind", "Node JS","Express JS", "MongoDB", "Firebase", "JWT"],
+    imageUrl: nestseek,
+    link:"https://github.com/adnan179/Nestseek",
   },
   {
     title: "Dental management Dashboard",
@@ -64,24 +68,12 @@ export const projectsData = [
     tags: ["React", "Next.js", "Tailwind","Framer Motion","Figma"],
     imageUrl: dental,
     link:"",
-  },
-  {
-    title: "Plantracx",
-    description:
-      "Revolutionizing fitness journeys with an all-in-one platform: Plan, Track, Achieve, and Inspire!",
-    tags: ["Figma","Next.js","React", "MongoDB", "Tailwind", "node JS","Framer motion"],
-    imageUrl: plantracx,
-    link:"https://www.figma.com/file/q3vNcATh0biKGBbhq5rQkg/fitness-app?type=design&node-id=0%3A1&mode=design&t=Fc4ak7CKZEOHlgPq-1",
-  },
-  
-  
-  
-  
+  }, 
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
+  "HTML5",
+  "CSS3",
   "JavaScript",
   "TypeScript",
   "React",
@@ -90,6 +82,12 @@ export const skillsData = [
   "Git",
   "Tailwind",
   "MongoDB",
+  "Firebase",
+  "SQL",
+  "Redux",
+  "Reactflow",
+  "Restful API",
+  "Postman",
   "Figma",
   "Python",
   "Framer Motion",
