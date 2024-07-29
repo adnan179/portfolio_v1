@@ -6,7 +6,7 @@ import SectionHeading from './sectionHeading';
 
 export default function ExperienceSection() {
   const { ref } = useSectionInView("Experience");
-  const [selectedTag, setSelectedTag] = useState<"Github Community" | "Reverr">(experiencesData[0].tag);
+  const [selectedTag, setSelectedTag] = useState<"Freelancing" | "Reverr">(experiencesData[0].tag);
 
   // Filter the experiencesData based on the selected tag
   const selectedExperience = experiencesData.find(experience => experience.tag === selectedTag);
@@ -23,7 +23,7 @@ export default function ExperienceSection() {
               <button
                 key={index}
                 className={selectedTag === experience.tag ? "px-5 py-3 rounded-xl border-black bg-black/10 dark:bg-white/10 text-pink-700 dark:text-blue-500 font-medium" :
-                  "px-5 py-3 rounded-xl border-black bg-white dark:bg-white/10 hover:scale-110 transition ease-in-out duration-300 dark:hover:text-blue-500 hover:text-pink-700"}
+                  "px-5 py-3 rounded-xl border-black bg-white dark:bg-white/10 hover:scale-110 transition ease-in-out duration-300"}
                 onClick={() => setSelectedTag(experience.tag)}
               >
                 {experience.tag}

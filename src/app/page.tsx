@@ -13,7 +13,6 @@ export default function Home() {
       <Intro/>
       <Divider/>
       <About/>
-      {/* <Divider/> */}
       <Projects/>
       <Skills/>
       <Experience/>

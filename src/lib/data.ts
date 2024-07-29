@@ -1,6 +1,6 @@
 import projectPortal from '../../public/project subsmission.png';
-import nestseek from "../../public/nestseek.png";
-import dental from "../../public/dental-admin-dashboard.png";
+import Ionarc from "../../public/ionarc.png";
+import scrapper from "../../public/scrapper.png";
 
 export const links = [
   {
@@ -31,11 +31,11 @@ export const links = [
 
 export const experiencesData = [
   {
-    tag:"Github Community",
-    title: "UI/UX Designer At college's Github community ",
+    tag:"Freelancing",
+    title: "Front-end developer",
     description:
-      "GitHub Community Leadership: Served as a core team member and UI/UX designer, contributing to web and app design projects within the college GitHub community, while also showcasing effective organizational and leadership skills through successful planning and management of various events, including the design of an events app and a community website, demonstrating versatility in design and project execution.",
-    date: "2023-present",
+      "As a freelance web developer, I've successfully completed a project for IonArc Consultancy, delivering a dynamic website that showcases their services and solutions. This project exemplifies my ability to create immersive, user-friendly web experiences. I'm excited to take on more amazing projects and continue bringing innovative ideas to life.",
+    date: "July 2024-present",
   },
   {
     tag: "Reverr",
@@ -48,27 +48,32 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "IonArc Consultancy Website",
+    description:
+      "🚀 I crafted a cutting-edge website for IonArc Consultancy as an exciting freelance project! 🌐 This dynamic platform highlights their top-tier cybersecurity services and innovative solutions, ensuring clients stay secure and ahead of the curve. 🔒✨",
+    tags: ["React", "Tailwind","Framer Motion","Figma"],
+    imageUrl: Ionarc,
+    link:"https://ionarc.in/",
+    GithubLink:"",
+  }, 
+  {
+    title: "Scrapper/Summarizer",
+    description:"🚀 Introducing our Web Scraper and Summarizer Tool! 🚀 Effortlessly extract and summarize content from any URL, export as PDFs 📄, and track your summaries 🗂️. With secure sign-in, clipboard copying 📋, and future API enhancements ⚙️, it's perfect for quick, efficient content management! #WebScraping #ContentSummarization🌐 ",
+    tags: ["React", "Tailwind", "Node JS","Express JS", "MongoDB"],
+    imageUrl: scrapper,
+    link:"",
+    GithubLink:"https://github.com/adnan179/Asva_summarizer_assignment",
+  },
+  {
     title: "College Project Submission portal",
     description:"🚀 Developed a dynamic project submission portal 📁 for students to upload files 📤, access announcements 📢, and streamline project management 🗂️. Included administrator features such as team creation 👥 and updates sharing 🔄 for an efficient and engaging user experience! 🌟",
-    tags: ["React", "Node JS", "Tailwind","Express JS","MongoDB","firebase","Figma","Postman","Multer","JWT"],
+    tags: ["MERN","Tailwind","firebase","Figma","Postman"],
     imageUrl: projectPortal,
-    link:"https://github.com/adnan179/final_year_project",
-  },
-  {
-    title: "NestSeek",
-    description:"🏡 NestSeek is a real estate platform that allows sellers to upload and manage property listings 🏘️, enables buyers to view detailed property information 📋 and contact sellers 📞, and provides a feature for users to post and find roommate requests 👫 based on their preferences. 🌟",
-    tags: ["React", "Tailwind", "Node JS","Express JS", "MongoDB", "Firebase", "JWT"],
-    imageUrl: nestseek,
-    link:"https://github.com/adnan179/Nestseek",
-  },
-  {
-    title: "Dental management Dashboard",
-    description:
-      "🦷 Introducing our Dental Admin Dashboard! 🌟Manage appointments, track attendance, and monitor finances effortlessly. Stay organized with inventory management and vendor tracking. Elevate your dental practice to new heights of efficiency and success! 💼💡",
-    tags: ["React", "Next.js", "Tailwind","Framer Motion","Figma"],
-    imageUrl: dental,
     link:"",
-  }, 
+    GithubLink:"https://github.com/adnan179/final_year_project",
+  },
+  
+  
 ] as const;
 
 export const skillsData = [
@@ -91,4 +96,6 @@ export const skillsData = [
   "Figma",
   "Python",
   "Framer Motion",
+  "Three JS",
+  "GSAP",
 ] as const;

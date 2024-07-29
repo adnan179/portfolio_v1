@@ -55,16 +55,25 @@ export default function Contact() {
         <input
           className="h-14 px-4 rounded-lg dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all outline-none
           focus:ring-1 focus:ring-pink-300"
+          name="senderName"
+          type="text"
+          required
+          maxLength={50}
+          placeholder="Name"
+        />
+        <input
+          className="h-14 mt-3 px-4 rounded-lg dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all outline-none
+          focus:ring-1 focus:ring-pink-300"
           name="senderEmail"
           type="email"
           required
           maxLength={500}
-          placeholder="Your email"
+          placeholder="Email"
         />
         <textarea
           className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none focus:ring-1 focus:ring-pink-300 outline-none"
           name="message"
-          placeholder="Your message"
+          placeholder="Message"
           required
           maxLength={5000}
         />

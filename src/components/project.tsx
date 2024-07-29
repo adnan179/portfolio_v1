@@ -14,6 +14,7 @@ export default function Project({
   tags,
   imageUrl,
   link,
+  GithubLink,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -33,7 +34,7 @@ export default function Project({
       className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[22rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20 cursor-pointer shadow dark:shadow-gray-200 shadow-pink-300">
-        <Link href={link} className="pt-5 pb-7 px-2 sm:pl-10 sm:pr-2 sm:pt-5 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
+        <div className="pt-5 pb-7 px-2 sm:pl-10 sm:pr-2 sm:pt-5 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 text-xs leading-relaxed text-gray-700 dark:text-white/70">
             {description}
@@ -48,7 +49,17 @@ export default function Project({
               </li>
             ))}
           </ul>
-        </Link>
+          <div className="flex flex-row gap-3 mt-3">
+            {link && (
+              <a href={link} target="_blank" rel="noopener noreferrer" className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">Hosted link</a>
+            )}
+            {GithubLink &&(
+              <a href={GithubLink} target="_blank" rel="noopener noreferrer" className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">Github link</a>
+            )}
+            
+          </div>
+          
+        </div>
 
         <Image
           src={imageUrl}
