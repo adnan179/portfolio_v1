@@ -53,15 +53,6 @@ export default function Contact() {
         }}
       >
         <input
-          className="h-14 px-4 rounded-lg dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all outline-none
-          focus:ring-1 focus:ring-pink-300"
-          name="senderName"
-          type="text"
-          required
-          maxLength={50}
-          placeholder="Name"
-        />
-        <input
           className="h-14 mt-3 px-4 rounded-lg dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all outline-none
           focus:ring-1 focus:ring-pink-300"
           name="senderEmail"

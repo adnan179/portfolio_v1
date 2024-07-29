@@ -11,7 +11,6 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export const SendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("senderEmail");
   const message = formData.get("message");
-  const senderName = formData.get("senderName");
 
   // simple server-side validation
   if (!validateString(senderEmail, 500)) {
@@ -33,7 +32,6 @@ export const SendEmail = async (formData: FormData) => {
       subject: "Message from contact form",
       reply_to: senderEmail,
       react: React.createElement(ContactFormEmail, {
-        senderName:senderName,
         message: message,
         senderEmail: senderEmail,
         
