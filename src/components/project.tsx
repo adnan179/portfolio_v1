@@ -15,6 +15,7 @@ export default function Project({
   imageUrl,
   link,
   GithubLink,
+  dribbbleLink,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -56,7 +57,9 @@ export default function Project({
             {GithubLink &&(
               <a href={GithubLink} target="_blank" rel="noopener noreferrer" className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">Github link</a>
             )}
-            
+            {dribbbleLink &&(
+              <a href={dribbbleLink} target="_blank" rel="noopener noreferrer" className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70">Dribbble link</a>
+            )}
           </div>
           
         </div>

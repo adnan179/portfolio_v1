@@ -1,6 +1,8 @@
 import projectPortal from '../../public/project subsmission.png';
 import Ionarc from "../../public/ionarc.png";
 import scrapper from "../../public/scrapper.png";
+import linkedin from "../../public/Linkedin_revamp_design.png";
+import morningBuddy from "../../public/morning_buddy_thumbnail.png";
 
 export const links = [
   {
@@ -44,17 +46,45 @@ export const experiencesData = [
       "Conducted extensive testing of Reverr's React JS website, identifying design flaws and ensuring functionality, while authoring comprehensive test cases and maintaining high-quality code standards through collaboration with the development team, all while deepening my understanding of web development.",
     date: "July 2023 - November 2023",
   },
+  {
+    tag: "Github community GITAM",
+    title: "UI/UX Designer and Community Builder for GitHub GITAM Community",
+    description:
+      "Led the design of innovative projects and case studies that enhanced the learning experience for students. Spearheaded workshops and dynamic events while collaborating with a team to educate and empower students on GitHub’s tools, fostering a strong culture of collaboration, learning, and growth within the college community.",
+    date: "July 2023 - April 2024",
+  },
 ] as const;
 
 export const projectsData = [
   {
+    title: "LinkedIn Home Page Refresh",
+    description:
+      "🚀 Implemented a fresh, user-focused redesign of LinkedIn’s homepage. Streamlined navigation, enhanced visual hierarchy, and improved accessibility for a smoother, more engaging user experience. Focused on subtle yet impactful design changes to elevate functionality and usability. 🔒✨",
+    tags: ["Figma"],
+    imageUrl: linkedin,
+    link:"",
+    GithubLink:"",
+    dribbbleLink:"https://dribbble.com/shots/24944391-LinkedIn-Home-Page-Refresh",
+  },
+  {
+    title: "Morning Buddy",
+    description:
+      "🚀 Designed and developed a sleek, user-friendly news app focused on delivering quick, categorized news updates. The immersive interface ensures users can easily browse breaking stories across various categories, with a visually engaging design for an enhanced reading experience. 🔒✨",
+    tags: ["Figma"],
+    imageUrl: morningBuddy,
+    link:"",
+    GithubLink:"",
+    dribbbleLink:"https://dribbble.com/shots/24895816-Morning-Buddy",
+  },
+  {
     title: "IonArc Consultancy Website",
     description:
-      "🚀 I crafted a cutting-edge website for IonArc Consultancy as an exciting freelance project! 🌐 This dynamic platform highlights their top-tier cybersecurity services and innovative solutions, ensuring clients stay secure and ahead of the curve. 🔒✨",
+      "🚀Crafted a cutting-edge website for IonArc Consultancy as an exciting freelance project! 🌐 This dynamic platform highlights their top-tier cybersecurity services and innovative solutions, ensuring clients stay secure and ahead of the curve. 🔒✨",
     tags: ["React", "Tailwind","Framer Motion","Figma"],
     imageUrl: Ionarc,
     link:"https://ionarc.in/",
     GithubLink:"",
+    dribbbleLink:"",
   }, 
   {
     title: "Scrapper/Summarizer",
@@ -63,6 +93,7 @@ export const projectsData = [
     imageUrl: scrapper,
     link:"",
     GithubLink:"https://github.com/adnan179/Asva_summarizer_assignment",
+    dribbbleLink:"",
   },
   {
     title: "College Project Submission portal",
@@ -71,6 +102,7 @@ export const projectsData = [
     imageUrl: projectPortal,
     link:"",
     GithubLink:"https://github.com/adnan179/final_year_project",
+    dribbbleLink:"",
   },
   
   
