@@ -82,7 +82,7 @@ export const projectsData = [
       "🚀Crafted a cutting-edge website for IonArc Consultancy as an exciting freelance project! 🌐 This dynamic platform highlights their top-tier cybersecurity services and innovative solutions, ensuring clients stay secure and ahead of the curve. 🔒✨",
     tags: ["React", "Tailwind","Framer Motion","Figma"],
     imageUrl: Ionarc,
-    link:"https://ionarc.in/",
+    link:"https://ionarc-website.vercel.app/",
     GithubLink:"",
     dribbbleLink:"",
   }, 
